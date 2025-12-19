@@ -11,12 +11,14 @@ cfx-generator/cfx-dataset(old)/
 cfx-generator/dataset/
 cfx-generator/pair-cfx-dataset/
 text-classification/ted_no_trainer_qwen(old).py
+text-classification/ted_glue_no_trainer.py
 
 scripts_cfx/run_cola.sh
 scripts_cfx/ted_glue.sh
 scripts_cfx/run_pair.sh
 scripts_cfx/finetune_glue.sh
 scripts_cfx/dist_glue_small.sh
+scripts_cfx/dist_glue.sh
 
 accuracy_table.tex
 boundary_plot_data.pkl

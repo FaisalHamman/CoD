@@ -2,9 +2,7 @@
 export PYTHONPATH=.
 
 # Define datasets, subset sizes and batch size
-# datasets=("sst2" "yelp" "sentiment140")
-
-datasets=("sst2") #"" "sentiment140" "cola")
+datasets=("sst2") 
 subset_sizes=(8 16 32 64 128 512)
 batch_size=8
 

@@ -21,7 +21,7 @@ for dataset in "${datasets[@]}"; do
     gpu_index=${gpus[$(( teacher_count % ${#gpus[@]} ))]}
     echo "Launching TEACHER experiment for dataset ${dataset} with subset ${subset} on GPU ${gpu_index}"
     CUDA_VISIBLE_DEVICES=${gpu_index} python text-classification/learn_filters_glue_no_trainer.py \
-      --model_name_or_path "/export/fhamman/cfxkd/task-aware-distillation/teacher_models/${teacher_models}/${dataset}/teacher_init" \
+      --model_name_or_path "./teacher_models/${teacher_models}/${dataset}/teacher_init" \
       --model_type ted-deberta-v2 \
       --task_name ${dataset} \
       --per_device_train_batch_size ${batch_size} \

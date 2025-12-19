@@ -5,7 +5,7 @@ export PYTHONPATH=.
 SEEDS=(0 1 2 3 4)
 datasets=("amazon" "sst2" "cola" "imdb" "yelp" "sentiment140")
 
-subset_sizes=(8) # 16 32 64 128 512)
+subset_sizes=(8 16 32 64 128 512)
 batch_size=8
 gpus=(0 1 2 3)
 

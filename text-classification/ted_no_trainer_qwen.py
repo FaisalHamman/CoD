@@ -476,14 +476,14 @@ def main():
 
         # Loading a dataset from the hub
         if args.data_type == "clean":
-            raw_datasets = load_from_disk(f"/export/fhamman/cfxkd/task-aware-distillation/cfx-generator/dataset/{args.task_name}_{args.subset_size}_seed{args.seed}")
-            print(f"Loading clean dataset from: /export/fhamman/cfxkd/task-aware-distillation/cfx-generator/dataset/{args.task_name}_{args.subset_size}_seed{args.seed}")
+            raw_datasets = load_from_disk(f"./cfx-generator/dataset/{args.task_name}_{args.subset_size}_seed{args.seed}")
+            print(f"Loading clean dataset from: ./cfx-generator/dataset/{args.task_name}_{args.subset_size}_seed{args.seed}")
         elif args.data_type == "cfx":
-            raw_datasets = load_from_disk(f"/export/fhamman/cfxkd/task-aware-distillation/cfx-generator/cfx-dataset/{args.task_name}_{args.subset_size}_seed{args.seed}")
-            print(f"Loading cfx dataset from: /export/fhamman/cfxkd/task-aware-distillation/cfx-generator/cfx-dataset/{args.task_name}_{args.subset_size}_seed{args.seed}")
+            raw_datasets = load_from_disk(f"./cfx-generator/cfx-dataset/{args.task_name}_{args.subset_size}_seed{args.seed}")
+            print(f"Loading cfx dataset from: ./cfx-generator/cfx-dataset/{args.task_name}_{args.subset_size}_seed{args.seed}")
         elif args.data_type == "pair_cfx":
-            raw_datasets = load_from_disk(f"/export/fhamman/cfxkd/task-aware-distillation/cfx-generator/pair-cfx-dataset/{args.task_name}_{args.subset_size}_seed{args.seed}")
-            print(f"Loading pair cfx dataset from: /export/fhamman/cfxkd/task-aware-distillation/cfx-generator/pair-cfx-dataset/{args.task_name}_{args.subset_size}_seed{args.seed}")
+            raw_datasets = load_from_disk(f"./cfx-generator/pair-cfx-dataset/{args.task_name}_{args.subset_size}_seed{args.seed}")
+            print(f"Loading pair cfx dataset from: ./cfx-generator/pair-cfx-dataset/{args.task_name}_{args.subset_size}_seed{args.seed}")
 
         
         #TODO: remove this when the dataset is fixed.
