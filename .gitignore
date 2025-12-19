@@ -16,7 +16,7 @@ scripts_cfx/run_cola.sh
 scripts_cfx/ted_glue.sh
 scripts_cfx/run_pair.sh
 scripts_cfx/finetune_glue.sh
-scripts_cfx/dist_glue.sh
+scripts_cfx/dist_glue_small.sh
 
 accuracy_table.tex
 boundary_plot_data.pkl
