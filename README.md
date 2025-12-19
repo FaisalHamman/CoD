@@ -84,7 +84,7 @@ bash scripts_cfx/run.sh
 ## Tasks, Models, and Outputs
 
 - Tasks/Datasets: `sst2`, `cola`, `imdb`, `sentiment140`, `amazon`, `yelp`.
-- Teachers: examples include `microsoft/deberta-v3-base`, `Qwen/Qwen2.5-1.5B`, `Qwen/Qwen2.5-7B` (see `teacher_models/`).
+- Teachers: examples include `microsoft/deberta-v3-base`, `Qwen/Qwen2.5-1.5B`, `Qwen/Qwen2.5-7B`.
 - Students: examples include `microsoft/deberta-v3-small`, `microsoft/deberta-v3-xsmall`, `Qwen/Qwen2.5-0.5B`.
 - Outputs: training artifacts and checkpoints under `ted_output/<dataset>/*` (e.g., `kd`, `lwd`); WANDB logs under `wandb/`.
 
